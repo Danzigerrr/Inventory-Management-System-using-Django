@@ -72,7 +72,7 @@ Contributions are welcome! Please fork the repository and submit a pull request.
 This project is licensed under the MIT License.
 
 ## Stay in touch
-Author - Krzysztof Nazar:
+**Author - Krzysztof Nazar**:
 - [Linkedin](https://www.linkedin.com/in/krzysztofnazar/)
 - [GitHub](https://github.com/Danzigerrr)
 
