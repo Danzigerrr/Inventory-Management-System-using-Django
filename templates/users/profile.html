@@ -65,5 +65,13 @@
     <button type="submit">Search</button>
 </form>
 
+
+<!-- Logout Form -->
+<form action="{% url 'logout' %}" method="post" style="margin-top: 20px;">
+    {% csrf_token %}
+    <button type="submit">Logout</button>
+</form>
+
+
 </body>
 </html>
