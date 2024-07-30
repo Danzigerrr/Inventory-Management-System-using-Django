@@ -3,8 +3,11 @@ from django.contrib import messages
 from .models import Product, InventoryTransaction, Purchase
 from .forms import InventoryTransactionForm, ProductForm, ProductSearchForm, PurchaseForm
 from django.contrib.auth.decorators import login_required
+from .decorators import admin_required
 
 
+@login_required
+@admin_required
 def manage_inventory(request):
     if request.method == 'POST':
         form = InventoryTransactionForm(request.POST)
@@ -34,6 +37,8 @@ def manage_inventory(request):
     })
 
 
+@login_required
+@admin_required
 def add_product(request):
     if request.method == 'POST':
         form = ProductForm(request.POST)
@@ -46,6 +51,7 @@ def add_product(request):
     return render(request, 'inventory/add_product.html', {'form': form})
 
 
+@login_required
 def search_products(request):
     form = ProductSearchForm(request.GET or None)
     products = Product.objects.all()
@@ -53,6 +59,7 @@ def search_products(request):
         query = form.cleaned_data['query']
         products = products.filter(name__icontains=query)
     return render(request, 'inventory/search_products.html', {'form': form, 'products': products})
+
 
 @login_required
 def buy_product(request, product_id):
@@ -74,6 +81,7 @@ def buy_product(request, product_id):
     else:
         form = PurchaseForm(initial={'product': product})
     return render(request, 'inventory/buy_product.html', {'form': form, 'product': product})
+
 
 @login_required
 def purchased_products(request):
