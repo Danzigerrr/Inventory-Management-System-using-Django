@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09c73adf-43cb-461d-8a99-1adb36555ddd" name="Changes" comment="move users management to &quot;customers&quot; application" />
+    <list default="true" id="09c73adf-43cb-461d-8a99-1adb36555ddd" name="Changes" comment="fix migrations issues with database">
+      <change afterPath="$PROJECT_DIR$/sales/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/sales/customer_report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/sales/inventory_report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/sales/sales_report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventoryManagementSystem/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/inventoryManagementSystem/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sales/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/sales/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +30,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dockerize-application" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,20 +46,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Django Server.django invenotry server.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Django Server.django invenotry server.executor": "Run",
+    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "django.template.preview.state": "SHOW_EDITOR_AND_PREVIEW",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Informatyka\Erasmus praktyki Berlin 2024\assignment_2\djangoProject\inventory\management\commands" />
@@ -137,7 +147,23 @@
       <option name="project" value="LOCAL" />
       <updated>1722336016254</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix migrations issues with database">
+      <option name="closed" value="true" />
+      <created>1722336385797</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1722336385797</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fix migrations issues with database">
+      <option name="closed" value="true" />
+      <created>1722336398475</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1722336398475</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +175,7 @@
     <MESSAGE value="create Dockerfile" />
     <MESSAGE value="create docker-compose.yml" />
     <MESSAGE value="update database" />
-    <option name="LAST_COMMIT_MESSAGE" value="update database" />
+    <MESSAGE value="fix migrations issues with database" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix migrations issues with database" />
   </component>
 </project>

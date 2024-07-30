@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sales Report</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f4f4f4;
+            text-align: left;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+<h1>Sales Report</h1>
+
+<p>Total Sales: ${{ total_sales|default:"0.00" }}</p>
+
+<h2>Sales Breakdown by Product</h2>
+<table>
+    <thead>
+    <tr>
+        <th>Product Name</th>
+        <th>Total Quantity Sold</th>
+        <th>Total Sales Value</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for item in breakdown %}
+        <tr>
+            <td>{{ item.product__name }}</td>
+            <td>{{ item.total_quantity }}</td>
+            <td>${{ item.total_value|default:"0.00" }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+<h2>Top 10 Most Popular Products</h2>
+<table>
+    <thead>
+    <tr>
+        <th>Product Name</th>
+        <th>Total Quantity Sold</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for product in popular_products %}
+        <tr>
+            <td>{{ product.product__name }}</td>
+            <td>{{ product.total_quantity }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+</body>
+</html>
