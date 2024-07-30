@@ -1,9 +1,9 @@
 from .forms import UserForm, CustomerForm
 from django.shortcuts import render, redirect
-from django.contrib.auth.forms import UserCreationForm
-from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from inventory.models import Purchase
+from django.contrib import messages
+from .forms import CustomUserCreationForm
 
 
 @login_required
@@ -18,7 +18,7 @@ def profile_edit(request):
     else:
         user_form = UserForm(instance=request.user)
         customer_form = CustomerForm(instance=request.user.customer_profile)
-    return render(request, 'customers/profile_edit.html', {
+    return render(request, 'users/profile_edit.html', {
         'user_form': user_form,
         'customer_form': customer_form
     })
@@ -26,16 +26,15 @@ def profile_edit(request):
 
 def register(request):
     if request.method == 'POST':
-        form = UserCreationForm(request.POST)
+        form = CustomUserCreationForm(request.POST)
         if form.is_valid():
             form.save()
             username = form.cleaned_data.get('username')
             messages.success(request, f'Account created for {username}!')
             return redirect('login')
     else:
-        form = UserCreationForm()
-    return render(request, 'customers/register.html', {'form': form})
-
+        form = CustomUserCreationForm()
+    return render(request, 'users/register.html', {'form': form})
 
 
 @login_required
@@ -49,4 +48,4 @@ def profile(request):
     context = {
         'purchases': purchases
     }
-    return render(request, 'customers/profile.html', context)
+    return render(request, 'users/profile.html', context)
