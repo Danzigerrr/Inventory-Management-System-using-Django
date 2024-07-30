@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Products</title>
+</head>
+<body>
+<h1>Search Products</h1>
+<form method="get">
+    {{ form.as_p }}
+    <button type="submit">Search</button>
+</form>
+<h2>Products</h2>
+<ul>
+    {% for product in products %}
+        <li>
+            {{ product.name }} - {{ product.price }} USD
+            <a href="{% url 'buy_product' product.id %}">Buy</a>
+        </li>
+    {% endfor %}
+</ul>
+</body>
+</html>
