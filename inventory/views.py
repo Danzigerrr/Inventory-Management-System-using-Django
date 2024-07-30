@@ -68,7 +68,7 @@ def buy_product(request, product_id):
                 product.save()
                 purchase.save()
                 messages.success(request, 'Purchase successful.')
-                return redirect('purchased_products')
+                return redirect('profile')
             else:
                 messages.error(request, 'Not enough stock available.')
     else:
