@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manage Inventory</title>
+</head>
+<body>
+<h1>Manage Inventory</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Submit</button>
+</form>
+
+<h2>Products</h2>
+<ul>
+    {% for product in products %}
+        <li>{{ product.name }}: {{ product.stock }} in stock</li>
+    {% endfor %}
+</ul>
+
+<h2>Transactions</h2>
+<ul>
+    {% for transaction in transactions %}
+        <li>{{ transaction.date }}: {{ transaction.transaction_type }} {{ transaction.quantity }} of {{ transaction.product.name }}</li>
+    {% endfor %}
+</ul>
+
+{% if messages %}
+    <ul>
+        {% for message in messages %}
+            <li>{{ message }}</li>
+        {% endfor %}
+    </ul>
+{% endif %}
+</body>
+</html>
