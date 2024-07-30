@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09c73adf-43cb-461d-8a99-1adb36555ddd" name="Changes" comment="add sales report page">
-      <change afterPath="$PROJECT_DIR$/sales/urls.py" afterDir="false" />
+    <list default="true" id="09c73adf-43cb-461d-8a99-1adb36555ddd" name="Changes" comment="add inventory report page">
       <change afterPath="$PROJECT_DIR$/templates/sales/customer_report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sales/inventory_report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sales/sales_report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventoryManagementSystem/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/inventoryManagementSystem/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customers/migrations/0001_initial.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sales/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/sales/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -171,7 +166,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722337880849</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add inventory report page">
+      <option name="closed" value="true" />
+      <created>1722337975000</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1722337975000</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +188,7 @@
     <MESSAGE value="update database" />
     <MESSAGE value="fix migrations issues with database" />
     <MESSAGE value="add sales report page" />
-    <option name="LAST_COMMIT_MESSAGE" value="add sales report page" />
+    <MESSAGE value="add inventory report page" />
+    <option name="LAST_COMMIT_MESSAGE" value="add inventory report page" />
   </component>
 </project>

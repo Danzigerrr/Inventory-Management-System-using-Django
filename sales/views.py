@@ -61,11 +61,22 @@ def inventory_report(request):
 @login_required
 @user_passes_test(is_admin)
 def customer_report(request):
+    # Get all customers
     customers = Customer.objects.all()
-    purchase_histories = {customer: Purchase.objects.filter(user=customer.user) for customer in customers}
+
+    # Prepare a list to hold customer data along with their purchases
+    customer_data = []
+    for customer in customers:
+        # Get all purchases related to this customer
+        purchases = Purchase.objects.filter(user=customer.user)
+        # Append a dictionary with customer and purchase details
+        customer_data.append({
+            'customer': customer,
+            'purchases': purchases
+        })
 
     context = {
-        'customers': customers,
-        'purchase_histories': purchase_histories,
+        'customer_data': customer_data,
     }
     return render(request, 'sales/customer_report.html', context)
+
