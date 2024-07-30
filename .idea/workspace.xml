@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09c73adf-43cb-461d-8a99-1adb36555ddd" name="Changes" comment="move users management to &quot;customers&quot; application">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="09c73adf-43cb-461d-8a99-1adb36555ddd" name="Changes" comment="move users management to &quot;customers&quot; application" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,7 +21,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="update-readme.md" />
+        <entry key="$PROJECT_DIR$" value="dockerize-application" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -117,7 +113,31 @@
       <option name="project" value="LOCAL" />
       <updated>1722273194348</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="create Dockerfile">
+      <option name="closed" value="true" />
+      <created>1722335905797</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1722335905797</updated>
+    </task>
+    <task id="LOCAL-00003" summary="create docker-compose.yml">
+      <option name="closed" value="true" />
+      <created>1722335918456</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1722335918456</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update database">
+      <option name="closed" value="true" />
+      <created>1722336016254</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1722336016254</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +146,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create a README file with project description" />
     <MESSAGE value="move users management to &quot;customers&quot; application" />
-    <option name="LAST_COMMIT_MESSAGE" value="move users management to &quot;customers&quot; application" />
+    <MESSAGE value="create Dockerfile" />
+    <MESSAGE value="create docker-compose.yml" />
+    <MESSAGE value="update database" />
+    <option name="LAST_COMMIT_MESSAGE" value="update database" />
   </component>
 </project>
