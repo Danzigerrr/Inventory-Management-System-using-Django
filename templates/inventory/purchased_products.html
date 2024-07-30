@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Purchased Products</title>
+</head>
+<body>
+<h1>Purchased Products</h1>
+<ul>
+    {% for purchase in purchases %}
+        <li>{{ purchase.product.name }} - {{ purchase.quantity }} (Bought on {{ purchase.date }})</li>
+    {% endfor %}
+</ul>
+</body>
+</html>
