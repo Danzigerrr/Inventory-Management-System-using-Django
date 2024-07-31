@@ -63,6 +63,12 @@ This is a Django-based web application designed to manage the inventory and sale
 - **Sales Management**: Navigate to `/sales/` to view and process sales.
 - **Customer Management**: Navigate to `/customers/` to view and manage customer data.
 
+## Testing
+To run the tests use the following command:
+```bash
+python manage.py test
+```
+
 ## Contributing
 
 Contributions are welcome! Please fork the repository and submit a pull request.
@@ -78,5 +84,5 @@ This project is licensed under the MIT License.
 
 
 ## License
-This project is [MIT licensed](LICENSE)
+This project is [MIT licensed](LICENSE).
 
