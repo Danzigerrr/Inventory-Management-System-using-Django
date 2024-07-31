@@ -36,17 +36,22 @@ This is a Django-based web application designed to manage the inventory and sale
    python manage.py migrate
    ```
 
-5. **Create a Superuser**
+5**Insert sample data into database**
+   ```bash
+   python manage.py populate_db
+   ```
+   
+6**Create a Superuser**
    ```bash
    python manage.py createsuperuser
    ```
 
-6. **Run the Development Server**
+7. **Run the Development Server**
    ```bash
    python manage.py runserver
    ```
 
-7. **Access the Application**
+8**Access the Application**
     - Open your browser and go to `http://127.0.0.1:8000/`
 
 ## Usage
@@ -63,6 +68,12 @@ This is a Django-based web application designed to manage the inventory and sale
 - **Sales Management**: Navigate to `/sales/` to view and process sales.
 - **Customer Management**: Navigate to `/customers/` to view and manage customer data.
 
+## Testing
+To run the tests use the following command:
+```bash
+python manage.py test
+```
+
 ## Contributing
 
 Contributions are welcome! Please fork the repository and submit a pull request.
@@ -78,5 +89,5 @@ This project is licensed under the MIT License.
 
 
 ## License
-This project is [MIT licensed](LICENSE)
+This project is [MIT licensed](LICENSE).
 
