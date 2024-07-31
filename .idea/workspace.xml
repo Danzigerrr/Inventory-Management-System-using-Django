@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09c73adf-43cb-461d-8a99-1adb36555ddd" name="Changes" comment="add tests for users views">
-      <change afterPath="$PROJECT_DIR$/READMEImages/banner.png" afterDir="false" />
+    <list default="true" id="09c73adf-43cb-461d-8a99-1adb36555ddd" name="Changes" comment="add repo banner file">
+      <change afterPath="$PROJECT_DIR$/READMEImages/admin_page.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -330,7 +331,23 @@
       <option name="project" value="LOCAL" />
       <updated>1722413664371</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="add repo banner">
+      <option name="closed" value="true" />
+      <created>1722414781841</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1722414781841</updated>
+    </task>
+    <task id="LOCAL-00022" summary="add repo banner file">
+      <option name="closed" value="true" />
+      <created>1722414791634</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1722414791634</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -357,7 +374,9 @@
     <MESSAGE value="add tests for inventory views" />
     <MESSAGE value="add tests for sales views" />
     <MESSAGE value="add tests for users views" />
-    <option name="LAST_COMMIT_MESSAGE" value="add tests for users views" />
+    <MESSAGE value="add repo banner" />
+    <MESSAGE value="add repo banner file" />
+    <option name="LAST_COMMIT_MESSAGE" value="add repo banner file" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/djangoProject$Test__sales_tests_test_views_SalesReportViewTests_test_sales_report_contains_correct_data.coverage" NAME="Test: sales.tests.test_views.SalesReportViewTests.test_sales_report_contains_correct_data Coverage Results" MODIFIED="1722348213662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />

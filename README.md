@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Fpremium-vector%2Fweather-infographic-line-climate-forecast-banner-with-rain-sunny-cold-day-elements-clouds-sky-moon-icons-precipitation-cloudiness-prediction-vector-meteorology-background_33099939.htm&psig=AOvVaw2MkwMPrTj5Qa60n1F8LWEi&ust=1721297430172000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMjzn-HqrYcDFQAAAAAdAAAAABAE" 
-target="blank"><img src="READMEImages/banner.png" width="500" alt="Weather application Logo" /></a>
+target="blank"><img src="READMEImages/banner.png" width="500" alt="Repo Banner" /></a>
 </p>
 
 # Inventory and Sales Management System
@@ -67,17 +67,32 @@ This is a Django-based web application designed to manage the inventory and sale
 - Log in with the superuser credentials.
 - Manage products, inventory transactions, sales, and customer data through the admin interface.
 
+<p align="center">
+  <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Fpremium-vector%2Fweather-infographic-line-climate-forecast-banner-with-rain-sunny-cold-day-elements-clouds-sky-moon-icons-precipitation-cloudiness-prediction-vector-meteorology-background_33099939.htm&psig=AOvVaw2MkwMPrTj5Qa60n1F8LWEi&ust=1721297430172000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMjzn-HqrYcDFQAAAAAdAAAAABAE" 
+target="blank"><img src="READMEImages/admin_page.png" width="400" alt="Admin Page" /></a>
+</p>
+
 ### Main Application
 
 - **Inventory Management**: Navigate to `/inventory/` to view and manage inventory.
 - **Sales Management**: Navigate to `/sales/` to view and process sales.
 - **Customer Management**: Navigate to `/customers/` to view and manage customer data.
 
+<p align="center">
+  <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Fpremium-vector%2Fweather-infographic-line-climate-forecast-banner-with-rain-sunny-cold-day-elements-clouds-sky-moon-icons-precipitation-cloudiness-prediction-vector-meteorology-background_33099939.htm&psig=AOvVaw2MkwMPrTj5Qa60n1F8LWEi&ust=1721297430172000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMjzn-HqrYcDFQAAAAAdAAAAABAE" 
+target="blank"><img src="READMEImages/admin_page.png" width="400" alt="Admin Page" /></a>
+</p>
+
+
 ## Testing
 To run the tests use the following command:
 ```bash
 python manage.py test
 ```
+<p align="center">
+  <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Fpremium-vector%2Fweather-infographic-line-climate-forecast-banner-with-rain-sunny-cold-day-elements-clouds-sky-moon-icons-precipitation-cloudiness-prediction-vector-meteorology-background_33099939.htm&psig=AOvVaw2MkwMPrTj5Qa60n1F8LWEi&ust=1721297430172000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMjzn-HqrYcDFQAAAAAdAAAAABAE" 
+target="blank"><img src="READMEImages/admin_page.png" width="400" alt="Tests results" /></a>
+</p>
 
 ## Contributing
 
