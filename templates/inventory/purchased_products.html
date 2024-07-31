@@ -1,14 +1,22 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Purchased Products</title>
-</head>
-<body>
-<h1>Purchased Products</h1>
-<ul>
-    {% for purchase in purchases %}
-        <li>{{ purchase.product.name }} - {{ purchase.quantity }} (Bought on {{ purchase.date }})</li>
-    {% endfor %}
-</ul>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block title %}Purchased Products{% endblock %}
+
+{% block content %}
+    <div class="container mt-4">
+        <h1 class="mb-4">Purchased Products</h1>
+        {% if purchases %}
+            <ul class="list-group">
+                {% for purchase in purchases %}
+                    <li class="list-group-item">
+                        {{ purchase.product.name }} - {{ purchase.quantity }} (Bought on {{ purchase.date|date:"F j, Y, g:i a" }})
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <div class="alert alert-info" role="alert">
+                No purchased products found.
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}
