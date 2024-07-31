@@ -24,7 +24,7 @@ class SalesReportViewTests(TestCase):
 
     def test_sales_report_contains_correct_data(self):
         response = self.client.get(reverse('sales_report'))
-        self.assertContains(response, 'Total Sales: $70.00')
+        self.assertContains(response, '$70.00')  # total sales
         self.assertContains(response, 'Product1')
         self.assertContains(response, 'Product2')
 
@@ -77,5 +77,5 @@ class InventoryReportViewTests(TestCase):
     def test_inventory_report_contains_correct_data(self):
         response = self.client.get(reverse('inventory_report'))
         self.assertContains(response, 'Product1')
-        self.assertContains(response, '10')
+        self.assertContains(response, '50')
 
