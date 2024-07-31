@@ -1,3 +1,8 @@
+<p align="center">
+  <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Fpremium-vector%2Fweather-infographic-line-climate-forecast-banner-with-rain-sunny-cold-day-elements-clouds-sky-moon-icons-precipitation-cloudiness-prediction-vector-meteorology-background_33099939.htm&psig=AOvVaw2MkwMPrTj5Qa60n1F8LWEi&ust=1721297430172000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMjzn-HqrYcDFQAAAAAdAAAAABAE" 
+target="blank"><img src="READMEImages/banner.png" width="500" alt="Weather application Logo" /></a>
+</p>
+
 # Inventory and Sales Management System
 
 This is a Django-based web application designed to manage the inventory and sales for a small business that sells handmade crafts and art supplies. The application provides functionalities to track inventory levels, process sales, and generate reports.
@@ -51,7 +56,7 @@ This is a Django-based web application designed to manage the inventory and sale
    python manage.py runserver
    ```
 
-8**Access the Application**
+8. **Access the Application**
     - Open your browser and go to `http://127.0.0.1:8000/`
 
 ## Usage
@@ -80,14 +85,11 @@ Contributions are welcome! Please fork the repository and submit a pull request.
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the [MIT licensed](LICENSE).
 
 ## Stay in touch
 **Author - Krzysztof Nazar**:
 - [Linkedin](https://www.linkedin.com/in/krzysztofnazar/)
 - [GitHub](https://github.com/Danzigerrr)
 
-
-## License
-This project is [MIT licensed](LICENSE).
 
