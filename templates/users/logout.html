@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Logout</title>
-</head>
-<body>
-<h2>Logout</h2>
-<p>You have been logged out.</p>
-<a href="{% url 'login' %}">Login again</a>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block title %}Logout{% endblock %}
+
+{% block content %}
+    <h2>Logout page</h2>
+    <p>You have been logged out.</p>
+    <a href="{% url 'login' %}">Login again</a>
+{% endblock %}
+
