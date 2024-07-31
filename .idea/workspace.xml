@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09c73adf-43cb-461d-8a99-1adb36555ddd" name="Changes" comment="add tests for users views">
-      <change afterPath="$PROJECT_DIR$/users/tests/test_views.py" afterDir="false" />
+    <list default="true" id="09c73adf-43cb-461d-8a99-1adb36555ddd" name="Changes" comment="update default page">
+      <change afterPath="$PROJECT_DIR$/READMEImages/admin_page_with_menu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/READMEImages/user_page_view.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventoryManagementSystem/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/inventoryManagementSystem/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,26 +43,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Django Server.django invenotry server.executor": "Run",
-    "Django Server.djangoProject.executor": "Run",
-    "Django tests.Test: sales.tests.test_models.PurchaseModelTests.executor": "Run",
-    "Django tests.Test: sales.tests.test_views.SalesReportViewTests.test_sales_report_contains_correct_data.executor": "Run",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "django.template.preview.state": "SHOW_EDITOR",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Informatyka/Erasmus praktyki Berlin 2024/assignment_2/djangoProject/users",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Django Server.django invenotry server.executor&quot;: &quot;Run&quot;,
+    &quot;Django Server.djangoProject.executor&quot;: &quot;Run&quot;,
+    &quot;Django tests.Test: sales.tests.test_models.PurchaseModelTests.executor&quot;: &quot;Run&quot;,
+    &quot;Django tests.Test: sales.tests.test_views.SalesReportViewTests.test_sales_report_contains_correct_data.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Informatyka/Erasmus praktyki Berlin 2024/assignment_2/djangoProject/users&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Informatyka\Erasmus praktyki Berlin 2024\assignment_2\djangoProject\users" />
@@ -69,6 +70,7 @@
       <recent name="C:\Informatyka\Erasmus praktyki Berlin 2024\assignment_2\djangoProject\inventory\management\commands" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Informatyka\Erasmus praktyki Berlin 2024\assignment_2\djangoProject\READMEImages" />
       <recent name="C:\Informatyka\Erasmus praktyki Berlin 2024\assignment_2\djangoProject\templates" />
       <recent name="C:\Informatyka\Erasmus praktyki Berlin 2024\assignment_2\djangoProject\templates\users" />
     </key>
@@ -331,7 +333,47 @@
       <option name="project" value="LOCAL" />
       <updated>1722413664371</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="add repo banner">
+      <option name="closed" value="true" />
+      <created>1722414781841</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1722414781841</updated>
+    </task>
+    <task id="LOCAL-00022" summary="add repo banner file">
+      <option name="closed" value="true" />
+      <created>1722414791634</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1722414791634</updated>
+    </task>
+    <task id="LOCAL-00023" summary="fix errors in sales views">
+      <option name="closed" value="true" />
+      <created>1722415266663</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1722415266663</updated>
+    </task>
+    <task id="LOCAL-00024" summary="add admin_page.png screenshot to README.md">
+      <option name="closed" value="true" />
+      <created>1722415291507</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1722415291507</updated>
+    </task>
+    <task id="LOCAL-00025" summary="update default page">
+      <option name="closed" value="true" />
+      <created>1722415436381</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1722415436381</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -358,7 +400,12 @@
     <MESSAGE value="add tests for inventory views" />
     <MESSAGE value="add tests for sales views" />
     <MESSAGE value="add tests for users views" />
-    <option name="LAST_COMMIT_MESSAGE" value="add tests for users views" />
+    <MESSAGE value="add repo banner" />
+    <MESSAGE value="add repo banner file" />
+    <MESSAGE value="fix errors in sales views" />
+    <MESSAGE value="add admin_page.png screenshot to README.md" />
+    <MESSAGE value="update default page" />
+    <option name="LAST_COMMIT_MESSAGE" value="update default page" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/djangoProject$Test__sales_tests_test_views_SalesReportViewTests_test_sales_report_contains_correct_data.coverage" NAME="Test: sales.tests.test_views.SalesReportViewTests.test_sales_report_contains_correct_data Coverage Results" MODIFIED="1722348213662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
