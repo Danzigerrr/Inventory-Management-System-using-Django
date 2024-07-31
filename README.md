@@ -36,12 +36,12 @@ This is a Django-based web application designed to manage the inventory and sale
    python manage.py migrate
    ```
 
-5**Insert sample data into database**
+5. **Insert sample data into database**
    ```bash
    python manage.py populate_db
    ```
    
-6**Create a Superuser**
+6. **Create a Superuser**
    ```bash
    python manage.py createsuperuser
    ```
