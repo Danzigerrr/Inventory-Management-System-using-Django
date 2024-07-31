@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09c73adf-43cb-461d-8a99-1adb36555ddd" name="Changes" comment="add inventory report page">
-      <change afterPath="$PROJECT_DIR$/templates/sales/customer_report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customers/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sales/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/sales/views.py" afterDir="false" />
+    <list default="true" id="09c73adf-43cb-461d-8a99-1adb36555ddd" name="Changes" comment="add tests for users views">
+      <change afterPath="$PROJECT_DIR$/users/tests/test_views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventoryManagementSystem/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/inventoryManagementSystem/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -43,11 +44,16 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "Django Server.django invenotry server.executor": "Run",
+    "Django Server.djangoProject.executor": "Run",
+    "Django tests.Test: sales.tests.test_models.PurchaseModelTests.executor": "Run",
+    "Django tests.Test: sales.tests.test_views.SalesReportViewTests.test_sales_report_contains_correct_data.executor": "Run",
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "django.template.preview.state": "SHOW_EDITOR",
     "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Informatyka/Erasmus praktyki Berlin 2024/assignment_2/djangoProject/users",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -58,6 +64,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Informatyka\Erasmus praktyki Berlin 2024\assignment_2\djangoProject\users" />
+      <recent name="C:\Informatyka\Erasmus praktyki Berlin 2024\assignment_2\djangoProject\inventory\tests" />
       <recent name="C:\Informatyka\Erasmus praktyki Berlin 2024\assignment_2\djangoProject\inventory\management\commands" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -65,7 +73,49 @@
       <recent name="C:\Informatyka\Erasmus praktyki Berlin 2024\assignment_2\djangoProject\templates\users" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Django Server.djangoProject">
+    <configuration name="Test: sales.tests.test_models.PurchaseModelTests" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="djangoProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="sales.tests.test_models.PurchaseModelTests" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test: sales.tests.test_views.SalesReportViewTests.test_sales_report_contains_correct_data" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="djangoProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="sales.tests.test_views.SalesReportViewTests.test_sales_report_contains_correct_data" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="djangoProject" type="Python.DjangoServer" factoryName="Django server">
       <module name="djangoProject" />
       <option name="ENV_FILES" value="" />
@@ -90,6 +140,17 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Django Server.djangoProject" />
+      <item itemvalue="Django tests.Test: sales.tests.test_models.PurchaseModelTests" />
+      <item itemvalue="Django tests.Test: sales.tests.test_views.SalesReportViewTests.test_sales_report_contains_correct_data" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Django tests.Test: sales.tests.test_views.SalesReportViewTests.test_sales_report_contains_correct_data" />
+        <item itemvalue="Django tests.Test: sales.tests.test_models.PurchaseModelTests" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -174,7 +235,103 @@
       <option name="project" value="LOCAL" />
       <updated>1722337975000</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add customer report page">
+      <option name="closed" value="true" />
+      <created>1722338471589</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1722338471589</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add README.md about docs">
+      <option name="closed" value="true" />
+      <created>1722413129668</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1722413129668</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add System Design Document.md to docs">
+      <option name="closed" value="true" />
+      <created>1722413149306</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1722413149306</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add User Manual.md to docs">
+      <option name="closed" value="true" />
+      <created>1722413218652</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1722413218652</updated>
+    </task>
+    <task id="LOCAL-00013" summary="update README.md with installation description">
+      <option name="closed" value="true" />
+      <created>1722413335900</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1722413335900</updated>
+    </task>
+    <task id="LOCAL-00014" summary="style inventory pages templates">
+      <option name="closed" value="true" />
+      <created>1722413431648</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1722413431648</updated>
+    </task>
+    <task id="LOCAL-00015" summary="style sales pages templates">
+      <option name="closed" value="true" />
+      <created>1722413456230</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1722413456230</updated>
+    </task>
+    <task id="LOCAL-00016" summary="style users pages templates">
+      <option name="closed" value="true" />
+      <created>1722413479379</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1722413479380</updated>
+    </task>
+    <task id="LOCAL-00017" summary="add tests for inventory models">
+      <option name="closed" value="true" />
+      <created>1722413579993</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1722413579993</updated>
+    </task>
+    <task id="LOCAL-00018" summary="add tests for inventory views">
+      <option name="closed" value="true" />
+      <created>1722413593804</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1722413593804</updated>
+    </task>
+    <task id="LOCAL-00019" summary="add tests for sales views">
+      <option name="closed" value="true" />
+      <created>1722413646088</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1722413646088</updated>
+    </task>
+    <task id="LOCAL-00020" summary="add tests for users views">
+      <option name="closed" value="true" />
+      <created>1722413664371</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1722413664371</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,6 +346,22 @@
     <MESSAGE value="fix migrations issues with database" />
     <MESSAGE value="add sales report page" />
     <MESSAGE value="add inventory report page" />
-    <option name="LAST_COMMIT_MESSAGE" value="add inventory report page" />
+    <MESSAGE value="add customer report page" />
+    <MESSAGE value="add README.md about docs" />
+    <MESSAGE value="add System Design Document.md to docs" />
+    <MESSAGE value="add User Manual.md to docs" />
+    <MESSAGE value="update README.md with installation description" />
+    <MESSAGE value="style inventory pages templates" />
+    <MESSAGE value="style sales pages templates" />
+    <MESSAGE value="style users pages templates" />
+    <MESSAGE value="add tests for inventory models" />
+    <MESSAGE value="add tests for inventory views" />
+    <MESSAGE value="add tests for sales views" />
+    <MESSAGE value="add tests for users views" />
+    <option name="LAST_COMMIT_MESSAGE" value="add tests for users views" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/djangoProject$Test__sales_tests_test_views_SalesReportViewTests_test_sales_report_contains_correct_data.coverage" NAME="Test: sales.tests.test_views.SalesReportViewTests.test_sales_report_contains_correct_data Coverage Results" MODIFIED="1722348213662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/djangoProject$Test__sales_tests_test_models_PurchaseModelTests.coverage" NAME="Test: sales.tests.test_models.PurchaseModelTests Coverage Results" MODIFIED="1722347763349" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
