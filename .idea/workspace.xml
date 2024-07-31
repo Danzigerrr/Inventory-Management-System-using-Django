@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09c73adf-43cb-461d-8a99-1adb36555ddd" name="Changes" comment="add tests for users views">
-      <change afterPath="$PROJECT_DIR$/users/tests/test_views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventoryManagementSystem/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/inventoryManagementSystem/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/READMEImages/banner.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,26 +40,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Django Server.django invenotry server.executor": "Run",
-    "Django Server.djangoProject.executor": "Run",
-    "Django tests.Test: sales.tests.test_models.PurchaseModelTests.executor": "Run",
-    "Django tests.Test: sales.tests.test_views.SalesReportViewTests.test_sales_report_contains_correct_data.executor": "Run",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "django.template.preview.state": "SHOW_EDITOR",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Informatyka/Erasmus praktyki Berlin 2024/assignment_2/djangoProject/users",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Django Server.django invenotry server.executor&quot;: &quot;Run&quot;,
+    &quot;Django Server.djangoProject.executor&quot;: &quot;Run&quot;,
+    &quot;Django tests.Test: sales.tests.test_models.PurchaseModelTests.executor&quot;: &quot;Run&quot;,
+    &quot;Django tests.Test: sales.tests.test_views.SalesReportViewTests.test_sales_report_contains_correct_data.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Informatyka/Erasmus praktyki Berlin 2024/assignment_2/djangoProject/users&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Informatyka\Erasmus praktyki Berlin 2024\assignment_2\djangoProject\users" />
@@ -69,6 +67,7 @@
       <recent name="C:\Informatyka\Erasmus praktyki Berlin 2024\assignment_2\djangoProject\inventory\management\commands" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Informatyka\Erasmus praktyki Berlin 2024\assignment_2\djangoProject\READMEImages" />
       <recent name="C:\Informatyka\Erasmus praktyki Berlin 2024\assignment_2\djangoProject\templates" />
       <recent name="C:\Informatyka\Erasmus praktyki Berlin 2024\assignment_2\djangoProject\templates\users" />
     </key>
