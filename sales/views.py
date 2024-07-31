@@ -1,8 +1,9 @@
 from django.shortcuts import render
-from django.db.models import Sum, F, Count
+from django.db.models import Sum, F
 from inventory.models import Product, Purchase, InventoryTransaction
-from django.contrib.auth.decorators import login_required, user_passes_test
+from django.contrib.auth.decorators import login_required
 from users.models import Customer
+from django.core.exceptions import PermissionDenied
 
 
 # Helper function to check if user is admin
@@ -11,8 +12,10 @@ def is_admin(user):
 
 
 @login_required
-@user_passes_test(is_admin)
 def sales_report(request):
+    if not is_admin(request.user):
+        raise PermissionDenied
+
     # Get all purchases with related product details
     purchases = Purchase.objects.select_related('product').annotate(
         total_price=F('quantity') * F('product__price')
@@ -37,7 +40,7 @@ def sales_report(request):
     ).order_by('-total_quantity')[:10]
 
     context = {
-        'total_sales': total_sales,
+        'total_sales': format(total_sales, '.2f'),
         'breakdown': breakdown,
         'popular_products': popular_products,
     }
@@ -46,8 +49,10 @@ def sales_report(request):
 
 
 @login_required
-@user_passes_test(is_admin)
 def inventory_report(request):
+    if not is_admin(request.user):
+        raise PermissionDenied
+
     transactions = InventoryTransaction.objects.all()
     inventory_levels = Product.objects.all()
 
@@ -59,8 +64,10 @@ def inventory_report(request):
 
 
 @login_required
-@user_passes_test(is_admin)
 def customer_report(request):
+    if not is_admin(request.user):
+        raise PermissionDenied
+
     # Get all customers
     customers = Customer.objects.all()
 
