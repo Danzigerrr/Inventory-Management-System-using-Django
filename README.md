@@ -69,14 +69,14 @@ This is a Django-based web application designed to manage the inventory and sale
 
 <p align="center">
   <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Fpremium-vector%2Fweather-infographic-line-climate-forecast-banner-with-rain-sunny-cold-day-elements-clouds-sky-moon-icons-precipitation-cloudiness-prediction-vector-meteorology-background_33099939.htm&psig=AOvVaw2MkwMPrTj5Qa60n1F8LWEi&ust=1721297430172000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMjzn-HqrYcDFQAAAAAdAAAAABAE" 
-target="blank"><img src="READMEImages/admin_page.png" width="400" alt="Django Admin Page" /></a>
+target="blank"><img src="READMEImages/admin_page.png" width="500" alt="Django Admin Page" /></a>
 </p>
 
 The admin can also log in to the system and manage the inventory, sales, and customer data through the provided interface.
 
 <p align="center">
   <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Fpremium-vector%2Fweather-infographic-line-climate-forecast-banner-with-rain-sunny-cold-day-elements-clouds-sky-moon-icons-precipitation-cloudiness-prediction-vector-meteorology-background_33099939.htm&psig=AOvVaw2MkwMPrTj5Qa60n1F8LWEi&ust=1721297430172000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMjzn-HqrYcDFQAAAAAdAAAAABAE" 
-target="blank"><img src="READMEImages/admin_page_with_menu.png" width="400" alt="Application Admin Page" /></a>
+target="blank"><img src="READMEImages/admin_page_with_menu.png" width="500" alt="Application Admin Page" /></a>
 </p>
 
 
@@ -86,21 +86,21 @@ target="blank"><img src="READMEImages/admin_page_with_menu.png" width="400" alt=
 
 <p align="center">
   <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Fpremium-vector%2Fweather-infographic-line-climate-forecast-banner-with-rain-sunny-cold-day-elements-clouds-sky-moon-icons-precipitation-cloudiness-prediction-vector-meteorology-background_33099939.htm&psig=AOvVaw2MkwMPrTj5Qa60n1F8LWEi&ust=1721297430172000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMjzn-HqrYcDFQAAAAAdAAAAABAE" 
-target="blank"><img src="READMEImages/user_page_view.png" width="400" alt="User Page - profile" /></a>
+target="blank"><img src="READMEImages/user_page_view.png" width="500" alt="User Page - profile" /></a>
 </p>
 
 - **Purchase Products**: Selected a product to buy it and specify the quantity.
 
 <p align="center">
   <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Fpremium-vector%2Fweather-infographic-line-climate-forecast-banner-with-rain-sunny-cold-day-elements-clouds-sky-moon-icons-precipitation-cloudiness-prediction-vector-meteorology-background_33099939.htm&psig=AOvVaw2MkwMPrTj5Qa60n1F8LWEi&ust=1721297430172000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMjzn-HqrYcDFQAAAAAdAAAAABAE" 
-target="blank"><img src="READMEImages/user_search_for_products.png" width="400" alt="User Page - search for products" /></a>
+target="blank"><img src="READMEImages/user_search_for_products.png" width="500" alt="User Page - search for products" /></a>
 </p>
 
 - **Check Purchased Products**: Navigate to `/users/profile/` to view profile details and purchasing history.
 
 <p align="center">
   <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Fpremium-vector%2Fweather-infographic-line-climate-forecast-banner-with-rain-sunny-cold-day-elements-clouds-sky-moon-icons-precipitation-cloudiness-prediction-vector-meteorology-background_33099939.htm&psig=AOvVaw2MkwMPrTj5Qa60n1F8LWEi&ust=1721297430172000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMjzn-HqrYcDFQAAAAAdAAAAABAE" 
-target="blank"><img src="READMEImages/user_buy_product.png" width="400" alt="User Page - buy products" /></a>
+target="blank"><img src="READMEImages/user_buy_product.png" width="500" alt="User Page - buy products" /></a>
 </p>
 
 ## Testing
@@ -110,7 +110,7 @@ python manage.py test
 ```
 <p align="center">
   <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Fpremium-vector%2Fweather-infographic-line-climate-forecast-banner-with-rain-sunny-cold-day-elements-clouds-sky-moon-icons-precipitation-cloudiness-prediction-vector-meteorology-background_33099939.htm&psig=AOvVaw2MkwMPrTj5Qa60n1F8LWEi&ust=1721297430172000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMjzn-HqrYcDFQAAAAAdAAAAABAE" 
-target="blank"><img src="READMEImages/unit_tests_results.png" width="400" alt="Unit Tests Results" /></a>
+target="blank"><img src="READMEImages/unit_tests_results.png" width="500" alt="Unit Tests Results" /></a>
 </p>
 
 
