@@ -1,67 +1,61 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Inventory Report</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-        }
-        th {
-            background-color: #f4f4f4;
-            text-align: left;
-        }
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-    </style>
-</head>
-<body>
-<h1>Inventory Report</h1>
+{% extends 'base.html' %}
 
-<h2>Inventory Levels</h2>
-<table>
-    <thead>
-    <tr>
-        <th>Product Name</th>
-        <th>Stock Level</th>
-    </tr>
-    </thead>
-    <tbody>
-    {% for product in inventory_levels %}
-        <tr>
-            <td>{{ product.name }}</td>
-            <td>{{ product.stock }}</td>
-        </tr>
-    {% endfor %}
-    </tbody>
-</table>
+{% block title %}Inventory Report{% endblock %}
 
-<h2>Inventory Transactions</h2>
-<table>
-    <thead>
-    <tr>
-        <th>Product</th>
-        <th>Quantity</th>
-        <th>Transaction Type</th>
-        <th>Date</th>
-    </tr>
-    </thead>
-    <tbody>
-    {% for transaction in transactions %}
-        <tr>
-            <td>{{ transaction.product.name }}</td>
-            <td>{{ transaction.quantity }}</td>
-            <td>{{ transaction.transaction_type }}</td>
-            <td>{{ transaction.date }}</td>
-        </tr>
-    {% endfor %}
-    </tbody>
-</table>
+{% block content %}
+    <div class="container mt-4">
+        <h1 class="mb-4">Inventory Report</h1>
 
-</body>
-</html>
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="card-title">Inventory Levels</h5>
+            </div>
+            <div class="card-body">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Stock Level</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for product in inventory_levels %}
+                        <tr>
+                            <td>{{ product.name }}</td>
+                            <td>{{ product.stock }}</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title">Inventory Transactions</h5>
+            </div>
+            <div class="card-body">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Transaction Type</th>
+                        <th>Date</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for transaction in transactions %}
+                        <tr>
+                            <td>{{ transaction.product.name }}</td>
+                            <td>{{ transaction.quantity }}</td>
+                            <td>{{ transaction.transaction_type }}</td>
+                            <td>{{ transaction.date }}</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock %}

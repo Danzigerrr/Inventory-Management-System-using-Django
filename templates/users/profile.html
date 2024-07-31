@@ -1,77 +1,75 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Profile</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-        }
-        th {
-            background-color: #f4f4f4;
-            text-align: left;
-        }
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-    </style>
-</head>
-<body>
-<p>
-    {% if messages %}
-        Messages:
-        <ul>
-            {% for message in messages %}
-                <li>{{ message }}</li>
-            {% endfor %}
-        </ul>
-    {% endif %}
-</p>
-<h2>Profile</h2>
-<p>Welcome, {{ user.username }}!</p>
+{% extends 'base.html' %}
 
-<p>Here you can see your purchased products:</p>
+{% block title %}Profile{% endblock %}
 
-{% if purchases %}
-    <table>
-        <thead>
-        <tr>
-            <th>Product Name</th>
-            <th>Quantity</th>
-            <th>Purchase Date</th>
-        </tr>
-        </thead>
-        <tbody>
-        {% for purchase in purchases %}
-            <tr>
-                <td>{{ purchase.product.name }}</td>
-                <td>{{ purchase.quantity }}</td>
-                <td>{{ purchase.date }}</td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
-{% else %}
-    <p>No purchased products yet.</p>
-{% endif %}
+{% block content %}
 
-<h3>Search for Products</h3>
-<form action="{% url 'search_products' %}" method="get">
-    <input type="text" name="query" placeholder="Search products..." required>
-    <button type="submit">Search</button>
-</form>
+    <div class="container mt-4">
 
+        <!-- Messages -->
+        {% if messages %}
+            <div class="alert alert-info">
+                <strong>Messages:</strong>
+                <ul>
+                    {% for message in messages %}
+                        <li>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
 
-<!-- Logout Form -->
-<form action="{% url 'logout' %}" method="post" style="margin-top: 20px;">
-    {% csrf_token %}
-    <button type="submit">Logout</button>
-</form>
+        <!-- Profile Header -->
+        <div class="mb-4">
+            <h2>Welcome, {{ user.username }}!</h2>
+            <p class="lead">Here you can see your purchased products and manage your account.</p>
+        </div>
 
+        <!-- Purchased Products -->
+        <div class="mb-4">
+            <h3>Purchased Products</h3>
+            {% if purchases %}
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Quantity</th>
+                        <th>Purchase Date</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for purchase in purchases %}
+                        <tr>
+                            <td>{{ purchase.product.name }}</td>
+                            <td>{{ purchase.quantity }}</td>
+                            <td>{{ purchase.date }}</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            {% else %}
+                <p>No purchased products yet.</p>
+            {% endif %}
+        </div>
 
-</body>
-</html>
+        <!-- Search Products Form -->
+        <div class="mb-4">
+            <h3>Search for Products</h3>
+            <form action="{% url 'search_products' %}" method="get" class="form-inline">
+                <div class="form-group mr-2">
+                    <input type="text" name="query" class="form-control" placeholder="Search products..." required>
+                </div>
+                <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+        </div>
+
+        <!-- Logout Form -->
+        <div>
+            <form action="{% url 'logout' %}" method="post" class="form-inline">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-danger">Logout</button>
+            </form>
+        </div>
+
+    </div>
+
+{% endblock %}

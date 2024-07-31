@@ -1,60 +1,52 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Customer Report</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-        }
-        th {
-            background-color: #f4f4f4;
-            text-align: left;
-        }
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-    </style>
-</head>
-<body>
-<h1>Customer Report</h1>
+{% extends 'base.html' %}
 
-{% if customer_data %}
-    <h2>Customer Purchase Histories</h2>
-    {% for data in customer_data %}
-        <h3>{{ data.customer.name }} ({{ data.customer.email }})</h3>
-        <table>
-            <thead>
-            <tr>
-                <th>Product Name</th>
-                <th>Quantity</th>
-                <th>Purchase Date</th>
-            </tr>
-            </thead>
-            <tbody>
-            {% if data.purchases %}
-                {% for purchase in data.purchases %}
-                    <tr>
-                        <td>{{ purchase.product.name }}</td>
-                        <td>{{ purchase.quantity }}</td>
-                        <td>{{ purchase.date }}</td>
-                    </tr>
-                {% endfor %}
-            {% else %}
-                <tr>
-                    <td colspan="3">No purchases yet.</td>
-                </tr>
-            {% endif %}
-            </tbody>
-        </table>
-    {% endfor %}
-{% else %}
-    <p>No customers found.</p>
-{% endif %}
+{% block title %}Customer Report{% endblock %}
 
-</body>
-</html>
+{% block content %}
+    <div class="container mt-4">
+        <h2 class="mb-4">Customer Report</h2>
+
+        {% if customer_data %}
+            <h3 class="mb-3">Customer Purchase Histories</h3>
+
+            {% for data in customer_data %}
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h5 class="card-title">{{ data.customer.name }} </h5>
+                        <h6 class="card-subtitle mb-2 text-muted">{{ data.customer.email }}</h6>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th>Product Name</th>
+                                <th>Quantity</th>
+                                <th>Purchase Date</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% if data.purchases %}
+                                {% for purchase in data.purchases %}
+                                    <tr>
+                                        <td>{{ purchase.product.name }}</td>
+                                        <td>{{ purchase.quantity }}</td>
+                                        <td>{{ purchase.date }}</td>
+                                    </tr>
+                                {% endfor %}
+                            {% else %}
+                                <tr>
+                                    <td colspan="3" class="text-center">No purchases yet.</td>
+                                </tr>
+                            {% endif %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            {% endfor %}
+        {% else %}
+            <div class="alert alert-warning" role="alert">
+                No customers found.
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}

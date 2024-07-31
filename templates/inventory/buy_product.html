@@ -1,21 +1,29 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Buy Product</title>
-</head>
-<body>
-<h1>Buy {{ product.name }}</h1>
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Buy</button>
-</form>
-{% if messages %}
-    <ul>
-        {% for message in messages %}
-            <li>{{ message }}</li>
-        {% endfor %}
-    </ul>
-{% endif %}
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block title %}Buy Product{% endblock %}
+
+{% block content %}
+    <div class="container mt-4">
+        <h1 class="mb-4">Buy {{ product.name }}</h1>
+
+        <form method="post" class="needs-validation" novalidate>
+            {% csrf_token %}
+            <div class="mb-3">
+                {{ form.as_p }}
+            </div>
+            <button type="submit" class="btn btn-primary">Buy</button>
+        </form>
+
+        {% if messages %}
+            <div class="mt-4">
+                <div class="alert alert-info" role="alert">
+                    <ul class="mb-0">
+                        {% for message in messages %}
+                            <li>{{ message }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}

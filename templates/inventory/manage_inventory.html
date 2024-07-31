@@ -1,36 +1,51 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Manage Inventory</title>
-</head>
-<body>
-<h1>Manage Inventory</h1>
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Submit</button>
-</form>
+{% extends 'base.html' %}
 
-<h2>Products</h2>
-<ul>
-    {% for product in products %}
-        <li>{{ product.name }}: {{ product.stock }} in stock</li>
-    {% endfor %}
-</ul>
+{% block title %}Manage Inventory{% endblock %}
 
-<h2>Transactions</h2>
-<ul>
-    {% for transaction in transactions %}
-        <li>{{ transaction.date }}: {{ transaction.transaction_type }} {{ transaction.quantity }} of {{ transaction.product.name }}</li>
-    {% endfor %}
-</ul>
+{% block content %}
+    <div class="container mt-4">
+        <h1 class="mb-4">Manage Inventory</h1>
 
-{% if messages %}
-    <ul>
-        {% for message in messages %}
-            <li>{{ message }}</li>
-        {% endfor %}
-    </ul>
-{% endif %}
-</body>
-</html>
+        <form method="post" class="needs-validation" novalidate>
+            {% csrf_token %}
+            <div class="mb-3">
+                {{ form.as_p }}
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+        <div class="mt-4">
+            <h2 class="mb-3">Products</h2>
+            <ul class="list-group">
+                {% for product in products %}
+                    <li class="list-group-item">
+                        {{ product.name }}: {{ product.stock }} in stock
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="mt-4">
+            <h2 class="mb-3">Transactions</h2>
+            <ul class="list-group">
+                {% for transaction in transactions %}
+                    <li class="list-group-item">
+                        {{ transaction.date }}: {{ transaction.transaction_type }} {{ transaction.quantity }} of {{ transaction.product.name }}
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        {% if messages %}
+            <div class="mt-4">
+                <div class="alert alert-info" role="alert">
+                    <ul class="mb-0">
+                        {% for message in messages %}
+                            <li>{{ message }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}
