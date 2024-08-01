@@ -7,6 +7,8 @@ target="blank"><img src="READMEImages/repo_banner.png" width="500" alt="Repo Ban
 
 This is a Django-based web application designed to manage the inventory and sales for a small business that sells handmade crafts and art supplies. The application provides functionalities to track inventory levels, process sales, and generate reports.
 
+**The application is live here: [Demo link](https://danzigerrrinventorymanager.pythonanywhere.com/).** The project is hosted on [PythonAnywhere](https://help.pythonanywhere.com/pages/DeployExistingDjangoProject/) ❤️🐍
+
 ## Features
 
 - **Inventory Management**: Track stock levels, receive new inventory, and update inventory levels as items are sold.
