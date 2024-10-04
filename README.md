@@ -5,6 +5,11 @@ target="blank"><img src="READMEImages/repo_banner.png" width="500" alt="Repo Ban
 
 # Inventory and Sales Management System
 
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Build Status](https://github.com/Danzigerrr/Inventory-Management-System-using-Django/actions/workflows/djangoCI.yml/badge.svg)
+![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)
+![Django Version](https://img.shields.io/badge/django-3.2%2B-green)
+
 This is a Django-based web application designed to manage the inventory and sales for a small business that sells handmade crafts and art supplies. The application provides functionalities to track inventory levels, process sales, and generate reports.
 
 **The application is live here: [Demo link](https://danzigerrrinventorymanager.pythonanywhere.com/).** The project is hosted on [PythonAnywhere](https://help.pythonanywhere.com/pages/DeployExistingDjangoProject/) ❤️🐍
